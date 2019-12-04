@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C5D63B96-8E80-46EA-B3F5-DE3E01C359E2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BL.Seguridad</RootNamespace>
+    <AssemblyName>BL.Seguridad</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientesBL.cs" />
+    <Compile Include="Contexto.cs" />
+    <Compile Include="DatosdeInicio.cs" />
+    <Compile Include="EquiposBL.cs" />
+    <Compile Include="SeguridadBL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TecnicosBL.cs" />
+    <Compile Include="TiposBL.cs" />
+    <Compile Include="Usuario.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Categoria.datasource" />
+    <None Include="Properties\DataSources\Categoria1.datasource" />
+    <None Include="Properties\DataSources\Categoria2.datasource" />
+    <None Include="Properties\DataSources\Categoria3.datasource" />
+    <None Include="Properties\DataSources\CategoriasBL.datasource" />
+    <None Include="Properties\DataSources\CategoriasBL1.datasource" />
+    <None Include="Properties\DataSources\CategoriasBL2.datasource" />
+    <None Include="Properties\DataSources\Cliente.datasource" />
+    <None Include="Properties\DataSources\Cliente1.datasource" />
+    <None Include="Properties\DataSources\Cliente2.datasource" />
+    <None Include="Properties\DataSources\ClientesBL.datasource" />
+    <None Include="Properties\DataSources\ClientesBL1.datasource" />
+    <None Include="Properties\DataSources\ClientesBL2.datasource" />
+    <None Include="Properties\DataSources\Contexto.datasource" />
+    <None Include="Properties\DataSources\Contexto1.datasource" />
+    <None Include="Properties\DataSources\Contexto2.datasource" />
+    <None Include="Properties\DataSources\Contexto3.datasource" />
+    <None Include="Properties\DataSources\DatosdeInicio.datasource" />
+    <None Include="Properties\DataSources\DatosdeInicio1.datasource" />
+    <None Include="Properties\DataSources\DatosdeInicio2.datasource" />
+    <None Include="Properties\DataSources\DatosdeInicio3.datasource" />
+    <None Include="Properties\DataSources\DetallesEquipo.datasource" />
+    <None Include="Properties\DataSources\Equipo.datasource" />
+    <None Include="Properties\DataSources\Equipo1.datasource" />
+    <None Include="Properties\DataSources\Equipo2.datasource" />
+    <None Include="Properties\DataSources\EquiposBL.datasource" />
+    <None Include="Properties\DataSources\EquiposBL1.datasource" />
+    <None Include="Properties\DataSources\EquiposBL2.datasource" />
+    <None Include="Properties\DataSources\EquiposBL3.datasource" />
+    <None Include="Properties\DataSources\NuevoCBL.Cliente.datasource" />
+    <None Include="Properties\DataSources\NuevoCBL.Cliente1.datasource" />
+    <None Include="Properties\DataSources\NuevoCBL.datasource" />
+    <None Include="Properties\DataSources\NuevoCBL.Resultado.datasource" />
+    <None Include="Properties\DataSources\NuevoCBL.Resultado1.datasource" />
+    <None Include="Properties\DataSources\NuevoCBL1.datasource" />
+    <None Include="Properties\DataSources\NuevoTBL.datasource" />
+    <None Include="Properties\DataSources\NuevoTBL1.datasource" />
+    <None Include="Properties\DataSources\NuevoTBL2.datasource" />
+    <None Include="Properties\DataSources\NuevoTBL3.datasource" />
+    <None Include="Properties\DataSources\Resultado.datasource" />
+    <None Include="Properties\DataSources\Resultado1.datasource" />
+    <None Include="Properties\DataSources\Resultado2.datasource" />
+    <None Include="Properties\DataSources\Resultado3.datasource" />
+    <None Include="Properties\DataSources\SeguridadBL.datasource" />
+    <None Include="Properties\DataSources\SeguridadBL1.datasource" />
+    <None Include="Properties\DataSources\SeguridadBL2.datasource" />
+    <None Include="Properties\DataSources\SeguridadBL3.datasource" />
+    <None Include="Properties\DataSources\Tecnico.datasource" />
+    <None Include="Properties\DataSources\Tecnico1.datasource" />
+    <None Include="Properties\DataSources\Tecnico2.datasource" />
+    <None Include="Properties\DataSources\Tecnico3.datasource" />
+    <None Include="Properties\DataSources\TecnicosBL.datasource" />
+    <None Include="Properties\DataSources\Tipo.datasource" />
+    <None Include="Properties\DataSources\Tipo1.datasource" />
+    <None Include="Properties\DataSources\Tipo2.datasource" />
+    <None Include="Properties\DataSources\Tipo3.datasource" />
+    <None Include="Properties\DataSources\TiposBL.datasource" />
+    <None Include="Properties\DataSources\TiposBL1.datasource" />
+    <None Include="Properties\DataSources\TiposBL2.datasource" />
+    <None Include="Properties\DataSources\TiposBL3.datasource" />
+    <None Include="Properties\DataSources\Usuario.datasource" />
+    <None Include="Properties\DataSources\Usuario1.datasource" />
+    <None Include="Properties\DataSources\Usuario2.datasource" />
+    <None Include="Properties\DataSources\Usuario3.datasource" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
